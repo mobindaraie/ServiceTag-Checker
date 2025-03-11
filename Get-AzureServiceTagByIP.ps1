@@ -61,8 +61,8 @@ function Get-AzureServiceTagByIP {
     [Parameter(Mandatory)]
     [ValidatePattern('^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$')]
     [string]$IPAddress,
-    [Parameter(Mandatory)]
-    [string]$Location
+    [Parameter()]
+    [string]$Location = 'eastus2'
   )
 
   $serviceTags = $null

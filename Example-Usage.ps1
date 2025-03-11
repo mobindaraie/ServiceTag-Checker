@@ -2,8 +2,7 @@
 
 # Example usage:
 $targetIP = "168.62.0.1"
-$location = "eastus2"
-$result = Get-AzureServiceTagByIP -IPAddress $targetIP -Location $location
+$result = Get-AzureServiceTagByIP -IPAddress $targetIP
 
 if ($result) {
   Write-Host "IP $targetIP belongs to the following service tag(s):"
